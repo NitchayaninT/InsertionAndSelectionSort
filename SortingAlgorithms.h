@@ -41,12 +41,12 @@ void SelectionSort(int *a,int N)
 
 void InsertionSort(int *a,int N)
 {
-    int count=1;
-    for(int i=0;i<N-1;i++)
+   
+    for(int i=1;i<=N;i++)
     {
        
         int sorted=0;
-        for(int j=count;j>0;j--)
+        for(int j=i-1;j>=0;j--)
         {
             if(a[j]<a[j-1])
             {
@@ -54,7 +54,7 @@ void InsertionSort(int *a,int N)
                 sorted=1;
             }
         }
-        count++;
+        
         if(sorted==0) continue;
         Display(a,N);
       
