@@ -22,7 +22,7 @@ void SelectionSort(int *a,int N)
                 minindex=j;
             }
         }
-        cout<<endl<<a[minindex]<<" "<<a[i]<<endl;
+        //cout<<endl<<a[minindex]<<" "<<a[i]<<endl;
        swap(a[i],a[minindex]);
 
     }
